@@ -2,7 +2,7 @@ function Cypher(obj = {'type': "CypherValue"}){
 
   const isValidValue = value => value && value.key && value.word && value.type == "CypherValue"
   const isValidKeyWord = kw => kw && kw.length
-  const forEach = (cryptVlue, fcrypt) => {
+  const reduce = (cryptVlue, fcrypt) => {
 
     const acc = []
 
@@ -24,7 +24,7 @@ function Cypher(obj = {'type': "CypherValue"}){
     'from': word => 
       isValidKeyWord(word)? Cypher({'word': word, ... obj}): Cypher(obj),
     'make': fcrypt => 
-      isValidValue(obj)? forEach(obj, fcrypt): []
+      isValidValue(obj)? reduce(obj, fcrypt): []
   }
 }
 
