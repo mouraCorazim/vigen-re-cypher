@@ -1,0 +1,20 @@
+{
+  "name": "vigen-re-cypher",
+  "version": "1.0.0",
+  "description": "Usando como base a cifra de Vigenère construir um algoritmo que replica a técnica de cifração.",
+  "main": "index.js",
+  "scripts": {
+    "test": 
+      "node ./tests/Encode.test.js && node ./tests/Decode.test.js && node ./index.js --encode ./x LIMAO && node ./index.js --decode ./x.encoded LIMAO"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mouraCorazim/vigen-re-cypher.git"
+  },
+  "author": "@mouraCorazim - lucasmouracorazim1@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mouraCorazim/vigen-re-cypher/issues"
+  },
+  "homepage": "https://github.com/mouraCorazim/vigen-re-cypher#readme"
+}
