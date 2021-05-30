@@ -1,5 +1,4 @@
 const Assert = require('assert').strict
-
 const { Characters,
         Cypher,
         Message,

@@ -44,5 +44,5 @@ module.exports = {
   onlyUpperCaseDecimalASCIICode,
   putInVigenereRange,
   sanitize,
-  takeCodes
+  takeCodes,
 }
